@@ -27,7 +27,7 @@
                     "name": "",
                     "id": "bfe7fed2-2e05-4c45-9218-768e87be3d58",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "Thrust",
@@ -36,7 +36,7 @@
                 },
                 {
                     "name": "1D Axis",
-                    "id": "62987deb-ad27-4440-97b4-a029e4ea2e8a",
+                    "id": "e54fe7cf-93af-471b-bf95-cdb0d3c70d97",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -47,7 +47,40 @@
                 },
                 {
                     "name": "negative",
-                    "id": "bcc9fbe8-fcf7-4390-9f0f-df2d74dac578",
+                    "id": "af8e44e2-1065-46a7-bffa-65cb8d09a764",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "108a3a89-e34b-4a22-bc55-9c12877ea04b",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "9d1a0d27-d737-4d2c-907b-7b696af75850",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f25eb3f2-3ce7-4305-b0a4-e5a1cf627218",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +91,7 @@
                 },
                 {
                     "name": "positive",
-                    "id": "77d37bbc-f3cd-4f0a-8c78-e839dc655a0d",
+                    "id": "b53b07a3-181b-487f-a1e8-e8f8ad31329c",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
