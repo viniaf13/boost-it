@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class Rocket : MonoBehaviour
 {
     [SerializeField] float rotationSensitivity = 100f;
-    [SerializeField] float thrustForce = 1f;
+    [SerializeField] float thrustForce = 1000f;
 
     private PlayerControls controls;
     private bool isThrusting =false;
@@ -42,7 +42,7 @@ public class Rocket : MonoBehaviour
         if (isThrusting)
         {
             if (!audioSource.isPlaying) audioSource.Play();
-            rigidBody.AddRelativeForce(Vector3.up * thrustForce);
+            rigidBody.AddRelativeForce(Vector3.up * thrustForce * Time.deltaTime);
         }
         else
         {
