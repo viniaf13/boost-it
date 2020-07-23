@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-public class Rocket : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] float rotationSensitivity = 100f;
     [SerializeField] float thrustForce = 1000f;
@@ -56,6 +57,14 @@ public class Rocket : MonoBehaviour
         Vector3 rotationVector = Vector3.forward * rotationSensitivity * direction;
         transform.Rotate(rotationVector * Time.deltaTime);
         rigidBody.freezeRotation = false;
+    }
+
+    public void TakeHit()
+    {
+        SceneLoader sceneLoader = FindObjectOfType<SceneLoader>();
+        if (!sceneLoader) Debug.LogError("SceneLoader not found.");
+
+        sceneLoader.RestartLevel();
     }
 
     private void OnEnable()
